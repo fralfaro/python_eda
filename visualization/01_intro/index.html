@@ -848,13 +848,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#elementos-para-la-creacion-de-una-buena-visualizacion" class="md-nav__link">
-    Elementos para la creación de una buena visualización
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1255,13 +1248,6 @@
           <li class="md-nav__item">
   <a href="#consejos-generales" class="md-nav__link">
     Consejos generales
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#elementos-para-la-creacion-de-una-buena-visualizacion" class="md-nav__link">
-    Elementos para la creación de una buena visualización
   </a>
   
 </li>
@@ -2371,12 +2357,13 @@ Licensed under the Apache License, Version 2.0.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="introduccion">Introducci&#243;n<a class="anchor-link" href="#introduccion">&#182;</a></h1><h2 id="introduccion">Introducci&#243;n<a class="anchor-link" href="#introduccion">&#182;</a></h2><p>Aprender sobre visualización es importante por varias razones:</p>
 <ul>
-<li><p><strong>Comunicar información compleja de manera clara y efectiva</strong>: Al presentar datos de una manera visual, es más fácil identificar patrones y tendencias, así como también hacer comparaciones y contrastes. Esto es especialmente importante cuando se trabaja con grandes conjuntos de datos o cuando se trata de presentar información a un público diverso.</p>
-</li>
-<li><p><strong>Descubrir información oculta o desconocida</strong>: A menudo, los datos pueden contener patrones o relaciones que no son obvios a simple vista, pero que pueden ser descubiertos mediante la exploración y la visualización. La visualización también puede ayudar a identificar errores y anomalías en los datos, lo que puede ser importante para la toma de decisiones y la planificación.</p>
-</li>
-<li><p><strong>Mejorar la capacidad de análisis de datos</strong>: Al comprender cómo presentar datos de manera efectiva, se puede desarrollar una mejor comprensión de los datos y las relaciones que existen entre ellos. Esto puede ayudar a tomar decisiones informadas basadas en datos y a identificar tendencias y oportunidades que de otra manera podrían haber pasado desapercibidas.</p>
-</li>
+<li><strong>Comunicar información compleja de manera clara y efectiva</strong>: Al presentar datos de una manera visual, es más fácil identificar patrones y tendencias, así como también hacer comparaciones y contrastes. Esto es especialmente importante cuando se trabaja con grandes conjuntos de datos o cuando se trata de presentar información a un público diverso.</li>
+</ul>
+<ul>
+<li><strong>Descubrir información oculta o desconocida</strong>: A menudo, los datos pueden contener patrones o relaciones que no son obvios a simple vista, pero que pueden ser descubiertos mediante la exploración y la visualización. La visualización también puede ayudar a identificar errores y anomalías en los datos, lo que puede ser importante para la toma de decisiones y la planificación.</li>
+</ul>
+<ul>
+<li><strong>Mejorar la capacidad de análisis de datos</strong>: Al comprender cómo presentar datos de manera efectiva, se puede desarrollar una mejor comprensión de los datos y las relaciones que existen entre ellos. Esto puede ayudar a tomar decisiones informadas basadas en datos y a identificar tendencias y oportunidades que de otra manera podrían haber pasado desapercibidas.</li>
 </ul>
 <h3 id="malos-graficos">Malos Gr&#225;ficos<a class="anchor-link" href="#malos-graficos">&#182;</a></h3><p><img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/Fox1.png" alt="image info"></p>
 <p><img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/male_height.jpg" alt="image info"></p>
@@ -2418,20 +2405,73 @@ Licensed under the Apache License, Version 2.0.
   — Colin Ware, Information Visualization, 2004.</em></p>
 </li>
 </ul>
+<blockquote><p><strong>Nota</strong>: En lo siguientes ejemplos utilizaremos código de <code>matplotlib</code> y <code>seaborn</code>, sin embargo, no entraremos en datelle debido a que detallaremos cada una de estas librerías en los siguientes capítulos.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="cuarteto-de-anscombe">Cuarteto de ANSCOMBE<a class="anchor-link" href="#cuarteto-de-anscombe">&#182;</a></h3><p>El <strong>Cuarteto de Anscombe</strong> es un conjunto de cuatro conjuntos de datos que tienen las mismas estadísticas descriptivas (medias, varianzas, correlaciones y regresiones), pero que se ven muy diferentes cuando se visualizan. Fueron presentados por el estadístico Francis Anscombe en 1973 para demostrar la importancia de la visualización en el análisis de datos.</p>
 <p>Los cuatro conjuntos de datos consisten en pares de variables <strong>x</strong> e <strong>y</strong>, y cada conjunto representa un tipo diferente de relación entre las variables. A simple vista, los cuatro conjuntos parecen tener distribuciones y relaciones completamente diferentes entre sí, pero cuando se analizan las estadísticas descriptivas, todas son idénticas.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
+        
+            <div class="celltoolbar">
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">{</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"tags":</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">[</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"hide-input"</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">]</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">}</span>
+                    </span>
+                </div>
+                
+            </div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
@@ -2456,6 +2496,54 @@ Licensed under the Apache License, Version 2.0.
         <span class="n">html_str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;table&#39;</span><span class="p">,</span><span class="s1">&#39;table style=&quot;display:inline&quot;&#39;</span><span class="p">),</span> 
         <span class="n">raw</span><span class="o">=</span><span class="kc">True</span>
     <span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Cargar los datos del cuarteto de Anscombe</span>
+<span class="n">anscombe</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;anscombe&quot;</span><span class="p">)</span>
+
+<span class="c1"># Dividir los datos en cuatro conjuntos según el valor de &quot;dataset&quot;</span>
+<span class="n">ds1</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;I&#39;</span><span class="p">]</span>
+<span class="n">ds2</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;II&#39;</span><span class="p">]</span>
+<span class="n">ds3</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;III&#39;</span><span class="p">]</span>
+<span class="n">ds4</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;IV&#39;</span><span class="p">]</span>
+
+<span class="c1"># Mostrar estadisticas para cada conjunto</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadisticas Basicas:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="s2">&quot; &quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset I </span><span class="si">{</span><span class="mi">13</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset II&quot;</span><span class="p">)</span>
+<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds1</span><span class="o">.</span><span class="n">describe</span><span class="p">(),</span><span class="n">ds2</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset III </span><span class="si">{</span><span class="mi">13</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset IV&quot;</span><span class="p">)</span>
+<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds3</span><span class="o">.</span><span class="n">describe</span><span class="p">(),</span><span class="n">ds4</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+
+<span class="c1"># Mostrar  correlaciones para cada conjunto</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correlaciones:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset I </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset II </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset III </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset IV&quot;</span><span class="p">)</span>
+<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds1</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds2</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds3</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds4</span><span class="o">.</span><span class="n">corr</span><span class="p">())</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Graficos:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Crear una figura con cuatro subplots</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="c1"># Graficar cada conjunto de datos en su respectivo subplot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds1</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds2</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds3</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds4</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># Agregar títulos a los subplots</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset I&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset II&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset III&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset IV&#39;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">from IPython.display import display_html
 
@@ -2467,49 +2555,9 @@ def display_side_by_side(*args):
     display_html(
         html_str.replace('table','table style="display:inline"'), 
         raw=True
-    )</div>
-    
-        </div>
-    </div>
+    )
 
-</div>
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-2">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="c1"># Cargar los datos del cuarteto de Anscombe</span>
-<span class="n">anscombe</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;anscombe&quot;</span><span class="p">)</span>
-
-<span class="c1"># Dividir los datos en cuatro conjuntos según el valor de &quot;dataset&quot;</span>
-<span class="n">ds1</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;I&#39;</span><span class="p">]</span>
-<span class="n">ds2</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;II&#39;</span><span class="p">]</span>
-<span class="n">ds3</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;III&#39;</span><span class="p">]</span>
-<span class="n">ds4</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;IV&#39;</span><span class="p">]</span>
-</pre></div>
-<div id="cell-2" class="clipboard-copy-txt">import seaborn as sns
+import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Cargar los datos del cuarteto de Anscombe
@@ -2519,51 +2567,43 @@ anscombe = sns.load_dataset("anscombe")
 ds1 = anscombe[anscombe['dataset'] == 'I']
 ds2 = anscombe[anscombe['dataset'] == 'II']
 ds3 = anscombe[anscombe['dataset'] == 'III']
-ds4 = anscombe[anscombe['dataset'] == 'IV']</div>
-    
-        </div>
-    </div>
+ds4 = anscombe[anscombe['dataset'] == 'IV']
 
-</div>
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-3">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Mostrar estadisticas para cada conjunto</span>
-<span class="n">x</span><span class="o">=</span><span class="s2">&quot; &quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset I </span><span class="si">{</span><span class="mi">13</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset II&quot;</span><span class="p">)</span>
-<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds1</span><span class="o">.</span><span class="n">describe</span><span class="p">(),</span><span class="n">ds2</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset III </span><span class="si">{</span><span class="mi">13</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset IV&quot;</span><span class="p">)</span>
-<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds3</span><span class="o">.</span><span class="n">describe</span><span class="p">(),</span><span class="n">ds4</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
-</pre></div>
-<div id="cell-3" class="clipboard-copy-txt"># Mostrar estadisticas para cada conjunto
+# Mostrar estadisticas para cada conjunto
+print("Estadisticas Basicas:\n")
 x=" "
 print(f"{10*x}Dataset I {13*x}Dataset II")
 display_side_by_side(ds1.describe(),ds2.describe())
 print()
 print(f"{10*x}Dataset III {13*x}Dataset IV")
-display_side_by_side(ds3.describe(),ds4.describe())</div>
+display_side_by_side(ds3.describe(),ds4.describe())
+
+# Mostrar  correlaciones para cada conjunto
+print("Correlaciones:\n")
+
+print(f"{5*x}Dataset I {10*x}Dataset II {10*x}Dataset III {10*x}Dataset IV")
+display_side_by_side(ds1.corr(),ds2.corr(),ds3.corr(),ds4.corr())
+
+
+print("Graficos:\n")
+
+# Crear una figura con cuatro subplots
+fig, axs = plt.subplots(ncols=4, figsize=(16, 4))
+
+# Graficar cada conjunto de datos en su respectivo subplot
+sns.regplot(x='x', y='y', data=ds1, ax=axs[0], ci=None)
+sns.regplot(x='x', y='y', data=ds2, ax=axs[1], ci=None)
+sns.regplot(x='x', y='y', data=ds3, ax=axs[2], ci=None)
+sns.regplot(x='x', y='y', data=ds4, ax=axs[3], ci=None)
+
+# Agregar títulos a los subplots
+axs[0].set_title('Dataset I')
+axs[1].set_title('Dataset II')
+axs[2].set_title('Dataset III')
+axs[3].set_title('Dataset IV')
+
+# Mostrar el gráfico
+plt.show()</div>
     
         </div>
     </div>
@@ -2585,7 +2625,9 @@ display_side_by_side(ds3.describe(),ds4.describe())</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>          Dataset I              Dataset II
+<pre>Estadisticas Basicas:
+
+          Dataset I              Dataset II
 </pre>
 </div>
 </div>
@@ -2829,53 +2871,6 @@ display_side_by_side(ds3.describe(),ds4.describe())</div>
 
 </div>
 
-</div>
-
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-4">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Mostrar  correlaciones para cada conjunto</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset I </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset II </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset III </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset IV&quot;</span><span class="p">)</span>
-<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds1</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds2</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds3</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds4</span><span class="o">.</span><span class="n">corr</span><span class="p">())</span>
-</pre></div>
-<div id="cell-4" class="clipboard-copy-txt"># Mostrar  correlaciones para cada conjunto
-print(f"{5*x}Dataset I {10*x}Dataset II {10*x}Dataset III {10*x}Dataset IV")
-display_side_by_side(ds1.corr(),ds2.corr(),ds3.corr(),ds4.corr())</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
 
     
@@ -2883,7 +2878,9 @@ display_side_by_side(ds1.corr(),ds2.corr(),ds3.corr(),ds4.corr())</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>     Dataset I           Dataset II           Dataset III           Dataset IV
+<pre>Correlaciones:
+
+     Dataset I           Dataset II           Dataset III           Dataset IV
 </pre>
 </div>
 </div>
@@ -2981,80 +2978,18 @@ display_side_by_side(ds1.corr(),ds2.corr(),ds3.corr(),ds4.corr())</div>
 
 </div>
 
-</div>
+<div class="jp-OutputArea-child">
 
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-5">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Crear una figura con cuatro subplots</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-
-<span class="c1"># Graficar cada conjunto de datos en su respectivo subplot</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds1</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds2</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds3</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds4</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-
-<span class="c1"># Agregar títulos a los subplots</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset I&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset II&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset III&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset IV&#39;</span><span class="p">)</span>
-
-<span class="c1"># Mostrar el gráfico</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-<div id="cell-5" class="clipboard-copy-txt"># Crear una figura con cuatro subplots
-fig, axs = plt.subplots(ncols=4, figsize=(16, 4))
-
-# Graficar cada conjunto de datos en su respectivo subplot
-sns.regplot(x='x', y='y', data=ds1, ax=axs[0], ci=None)
-sns.regplot(x='x', y='y', data=ds2, ax=axs[1], ci=None)
-sns.regplot(x='x', y='y', data=ds3, ax=axs[2], ci=None)
-sns.regplot(x='x', y='y', data=ds4, ax=axs[3], ci=None)
-
-# Agregar títulos a los subplots
-axs[0].set_title('Dataset I')
-axs[1].set_title('Dataset II')
-axs[2].set_title('Dataset III')
-axs[3].set_title('Dataset IV')
-
-# Mostrar el gráfico
-plt.show()</div>
     
-        </div>
-    </div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Graficos:
+
+</pre>
 </div>
 </div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
 
 <div class="jp-OutputArea-child">
 
@@ -3118,18 +3053,58 @@ jp-needs-light-background
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[137]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
+        
+            <div class="celltoolbar">
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">{</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"tags":</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">[</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"hide-input"</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">]</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">}</span>
+                    </span>
+                </div>
+                
+            </div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-6">
+            <clipboard-copy for="cell-2">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3160,7 +3135,7 @@ jp-needs-light-background
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Paradoja de Simpson&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-<div id="cell-6" class="clipboard-copy-txt">import pandas as pd
+<div id="cell-2" class="clipboard-copy-txt">import pandas as pd
 import matplotlib.pyplot as plt
 
 # Crear un DataFrame con los datos
@@ -3242,18 +3217,58 @@ jp-needs-light-background
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[141]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
+        
+            <div class="celltoolbar">
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">{</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"tags":</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">[</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"hide-input"</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">]</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">}</span>
+                    </span>
+                </div>
+                
+            </div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-7">
+            <clipboard-copy for="cell-3">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3285,8 +3300,16 @@ jp-needs-light-background
 <span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Dataset II&#39;</span><span class="p">)</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">ds1</span><span class="p">,</span><span class="n">ds2</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grafico para todo el conjunto de datos&quot;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>   <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grafico para los grupos por separados&quot;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>    <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-<div id="cell-7" class="clipboard-copy-txt">import pandas as pd
+<div id="cell-3" class="clipboard-copy-txt">import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -3307,42 +3330,14 @@ ds2 = pd.DataFrame({
     'y': y}
 ).assign(label = 'Dataset II')
 
-df = pd.concat([ds1,ds2])</div>
-    
-        </div>
-    </div>
+df = pd.concat([ds1,ds2])
 
-</div>
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[144]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-8">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grafico para todo el conjunto de datos&quot;</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>   <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-<div id="cell-8" class="clipboard-copy-txt">print("Grafico para todo el conjunto de datos")
+print("Grafico para todo el conjunto de datos")
 sns.lmplot (x='x', y='y',  data=df,   ci=None)
+plt.show()
+
+print("Grafico para los grupos por separados")
+sns.lmplot (x='x', y='y', data=df,    hue='label', ci=None)
 plt.show()</div>
     
         </div>
@@ -3389,53 +3384,6 @@ jp-needs-light-background
 
 </div>
 
-</div>
-
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[145]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-9">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grafico para los grupos por separados&quot;</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>    <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-<div id="cell-9" class="clipboard-copy-txt">print("Grafico para los grupos por separados")
-sns.lmplot (x='x', y='y', data=df,    hue='label', ci=None)
-plt.show()</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
 
     
@@ -3480,40 +3428,35 @@ jp-needs-light-background
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="teoria-de-visualizacion">Teor&#237;a de visualizaci&#243;n<a class="anchor-link" href="#teoria-de-visualizacion">&#182;</a></h2><p>La <strong>teoría de visualización</strong> se refiere a la investigación y el estudio de cómo las personas procesan, interpretan y comprenden información visual. La visualización puede involucrar cualquier tipo de información que pueda ser representada visualmente, incluyendo gráficos, diagramas, mapas, fotografías y videos.</p>
-<p>La teoría de visualización tiene aplicaciones en una amplia variedad de campos, como la educación, la ciencia, la tecnología, el diseño y la comunicación. Algunos de los conceptos y principios importantes en la teoría de visualización incluyen:</p>
+<p>Algunos de los conceptos y principios importantes en la teoría de visualización incluyen:</p>
 <ul>
 <li><strong>Percepción visual</strong>: Cómo procesamos y entendemos la información visual a través de nuestros sentidos.</li>
+</ul>
+<ul>
 <li><strong>Cognición visual</strong>: Cómo procesamos y entendemos la información visual a través de nuestros procesos mentales, como la atención, la memoria y la toma de decisiones.</li>
+</ul>
+<ul>
 <li><strong>Diseño visual</strong>: Cómo se pueden crear visualizaciones efectivas y atractivas para comunicar información de manera clara y efectiva.</li>
+</ul>
+<ul>
 <li><strong>Interactividad visual</strong>: Cómo las visualizaciones interactivas pueden ayudar a los usuarios a explorar y comprender mejor la información visual.</li>
 </ul>
-<h3 id="consejos-generales">Consejos generales<a class="anchor-link" href="#consejos-generales">&#182;</a></h3><p><strong>Noah Illinsky</strong> es un experto en visualización de datos y ha identificado cuatro pilares fundamentales de la visualización. Estos pilares son:</p>
+<h3 id="consejos-generales">Consejos generales<a class="anchor-link" href="#consejos-generales">&#182;</a></h3><p><strong>Noah Iliinsky</strong> es un experto en visualización de datos y ha identificado cuatro pilares fundamentales de la visualización.</p>
+<p>Estos pilares son:</p>
 <ul>
-<li><p><strong>Contenido</strong>: El contenido se refiere a la información que se está visualizando. Para que la visualización sea efectiva, es importante tener una comprensión clara del contenido y cómo se relaciona con el objetivo de la visualización.</p>
-</li>
-<li><p><strong>Función</strong>: La función se refiere al propósito de la visualización. ¿Qué se espera que haga la visualización? ¿Debe mostrar una tendencia, comparar datos o explorar patrones? Es importante tener en cuenta la función de la visualización para asegurarse de que se está diseñando de manera efectiva.</p>
-</li>
-<li><p><strong>Forma</strong>: La forma se refiere a la apariencia visual de la visualización. Esto incluye cosas como el tipo de gráfico o diagrama utilizado, la paleta de colores y la tipografía. La forma debe ser coherente y legible para que la visualización sea fácil de entender.</p>
-</li>
-<li><p><strong>Audiencia</strong>: La audiencia se refiere a las personas que verán la visualización. La comprensión de la audiencia es esencial para determinar el nivel de detalle y complejidad adecuados para la visualización. La visualización debe ser accesible y comprensible para su audiencia objetivo.</p>
-</li>
+<li><strong>Contenido</strong>: El contenido se refiere a la información que se está visualizando. Para que la visualización sea efectiva, es importante tener una comprensión clara del contenido y cómo se relaciona con el objetivo de la visualización.</li>
 </ul>
-<h3 id="elementos-para-la-creacion-de-una-buena-visualizacion">Elementos para la creaci&#243;n de una buena visualizaci&#243;n<a class="anchor-link" href="#elementos-para-la-creacion-de-una-buena-visualizacion">&#182;</a></h3><ul>
-<li><p><strong>Claridad</strong>: La visualización debe ser clara y fácil de entender. Cualquier texto, etiqueta o leyenda debe ser fácil de leer, y los elementos gráficos deben estar dispuestos de manera lógica y fácil de seguir.</p>
-</li>
-<li><p><strong>Integridad</strong> de los datos: Los datos que se utilizan para la visualización deben ser precisos y completos. Es importante que los datos sean confiables y estén bien documentados.</p>
-</li>
-<li><p><strong>Contexto</strong>: La visualización debe proporcionar contexto para los datos que se muestran. Esto podría incluir información sobre la fuente de los datos, el período de tiempo que se está considerando o cualquier otra información relevante.</p>
-</li>
-<li><p><strong>Diseño coherente</strong>: El diseño de la visualización debe ser coherente y cohesivo. Esto significa que los elementos de la visualización deben estar dispuestos de manera lógica y coherente, y que cualquier texto o etiqueta debe seguir un estilo visual consistente.</p>
-</li>
-<li><p><strong>Interactividad</strong>: Si es posible, es útil incluir interactividad en la visualización. Esto puede permitir a los usuarios explorar y manipular los datos para obtener información más detallada.</p>
-</li>
-<li><p><strong>Audiencia</strong>: La visualización debe estar diseñada con su audiencia en mente. Esto significa que el nivel de detalle y la complejidad de la visualización deben ser apropiados para la audiencia prevista.</p>
-</li>
-<li><p><strong>Diseño estético</strong>: La visualización debe ser atractiva y bien diseñada. Esto no solo hace que la visualización sea más agradable de ver, sino que también puede ayudar a los usuarios a comprender mejor la información que se presenta.</p>
-</li>
+<ul>
+<li><strong>Función</strong>: La función se refiere al propósito de la visualización. ¿Qué se espera que haga la visualización? ¿Debe mostrar una tendencia, comparar datos o explorar patrones? Es importante tener en cuenta la función de la visualización para asegurarse de que se está diseñando de manera efectiva.</li>
 </ul>
+<ul>
+<li><strong>Forma</strong>: La forma se refiere a la apariencia visual de la visualización. Esto incluye cosas como el tipo de gráfico o diagrama utilizado, la paleta de colores y la tipografía. La forma debe ser coherente y legible para que la visualización sea fácil de entender.</li>
+</ul>
+<ul>
+<li><strong>Audiencia</strong>: La audiencia se refiere a las personas que verán la visualización. La comprensión de la audiencia es esencial para determinar el nivel de detalle y complejidad adecuados para la visualización. La visualización debe ser accesible y comprensible para su audiencia objetivo.</li>
+</ul>
+<blockquote><p><strong>Nota</strong>: Se recomienda ver el siguiente <a href="https://www.youtube.com/watch?v=nC92wIzpQFE&amp;ab_channel=StarsConf">video</a> para profundizar estos conceptos</p>
+</blockquote>
 <h2 id="mas-aspectos-de-la-visualizacion">M&#225;s Aspectos de la Visualizaci&#243;n<a class="anchor-link" href="#mas-aspectos-de-la-visualizacion">&#182;</a></h2><h3 id="honestidad">Honestidad<a class="anchor-link" href="#honestidad">&#182;</a></h3><p>El ojo humano no tiene la misma precisión al estimar distintas atribuciones:</p>
 <ul>
 <li><strong>Largo</strong>: Bien estimado y sin sesgo, con un factor multiplicativo de 0.9 a 1.1.</li>
@@ -3529,18 +3472,58 @@ y porque es posible indicar los porcentajes respectivos.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
+        
+            <div class="celltoolbar">
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">{</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"tags":</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">[</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"hide-input"</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">]</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">}</span>
+                    </span>
+                </div>
+                
+            </div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-10">
+            <clipboard-copy for="cell-4">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3568,7 +3551,7 @@ y porque es posible indicar los porcentajes respectivos.</p>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-<div id="cell-10" class="clipboard-copy-txt"># Pie chart, where the slices will be ordered and plotted counter-clockwise:
+<div id="cell-4" class="clipboard-copy-txt"># Pie chart, where the slices will be ordered and plotted counter-clockwise:
 labels = 'Frogs', 'Hogs', 'Dogs', 'Logs'
 sizes = [15, 30, 45, 10]
 explode = (0, 0.1, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
@@ -3634,18 +3617,58 @@ class="
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
+        
+            <div class="celltoolbar">
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">{</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"tags":</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">[</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">"hide-input"</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">]</span>
+                    </span>
+                </div>
+                
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">}</span>
+                    </span>
+                </div>
+                
+            </div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-11">
+            <clipboard-copy for="cell-5">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3676,7 +3699,7 @@ class="
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-<div id="cell-11" class="clipboard-copy-txt">np.random.seed(42)
+<div id="cell-5" class="clipboard-copy-txt">np.random.seed(42)
 N = 31
 x = np.arange(N)
 y1 = 80 + 20 *x / N + 5 * np.random.rand(N)
@@ -3740,7 +3763,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput  celltag_{ celltag_"tags": celltag_[ celltag_"hide-input" celltag_] celltag_}" data-mime-type="text/markdown">
 <h3 id="percepcion">Percepci&#243;n<a class="anchor-link" href="#percepcion">&#182;</a></h3><p>No todos los elementos tienen la misma percepción a nivel del sistema visual. En particular, el color y la forma son elementos preatentivos: un color distinto o una forma distinta se reconocen de manera no conciente.</p>
 <p>Ejemplos de elementos preatentivos.</p>
 <p><img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/preatentivo1.png" alt="" width="600" align="middle"/></p>
