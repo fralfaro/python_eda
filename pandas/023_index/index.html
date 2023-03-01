@@ -2264,7 +2264,13 @@ Licensed under the Apache License, Version 2.0.
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="indexacion-y-seleccion">Indexaci&#243;n y Selecci&#243;n<a class="anchor-link" href="#indexacion-y-seleccion">&#182;</a></h1><h2 id="indexacion-pandas-series">Indexaci&#243;n pandas Series<a class="anchor-link" href="#indexacion-pandas-series">&#182;</a></h2><p>La indexación y selección de objetos Series de Pandas es una de las funcionalidades más importantes de la biblioteca, y permite acceder a los elementos individuales de una serie, así como seleccionar subconjuntos de elementos según diferentes criterios.</p>
-<p>Veamos algunos ejemplos</p>
+<p>Para acceder a los elementos hay 2 formas de hacerlo.</p>
+<ol>
+<li><p>Por <strong>etiquetas</strong> o método <code>.loc</code></p>
+</li>
+<li><p>Por <strong>posición</strong> o el método <code>.iloc</code></p>
+</li>
+</ol>
 
 </div>
 </div>
@@ -2356,7 +2362,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2371,9 +2377,68 @@ dtype: int64</pre>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="p">[</span><span class="s1">&#39;manzanas&#39;</span><span class="p">])</span> <span class="c1"># 10</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># acceder por indice &#39;manzana&#39; - sin &#39;.loc&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="p">[</span><span class="s1">&#39;manzanas&#39;</span><span class="p">])</span> <span class="c1"># 10</span>
 </pre></div>
-<div id="cell-2" class="clipboard-copy-txt">print(frutas['manzanas']) # 10</div>
+<div id="cell-2" class="clipboard-copy-txt"># acceder por indice 'manzana' - sin '.loc'
+print(frutas['manzanas']) # 10</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>10
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-3">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># acceder por indice &#39;manzana&#39; - con &#39;.loc&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;manzanas&#39;</span><span class="p">])</span> <span class="c1"># 10</span>
+</pre></div>
+<div id="cell-3" class="clipboard-copy-txt"># acceder por indice 'manzana' - con '.loc'
+print(frutas.loc['manzanas']) # 10</div>
     
         </div>
     </div>
@@ -2423,12 +2488,12 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-3">
+            <clipboard-copy for="cell-4">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2438,9 +2503,68 @@ dtype: int64</pre>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># 10</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># acceder por la posicion 0 - sin &#39;.loc&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># 10</span>
 </pre></div>
-<div id="cell-3" class="clipboard-copy-txt">print(frutas[0]) # 10</div>
+<div id="cell-4" class="clipboard-copy-txt"># acceder por la posicion 0 - sin '.loc'
+print(frutas[0]) # 10</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>10
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-5">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># acceder por la posicion 0 - con &#39;.iloc&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># 10</span>
+</pre></div>
+<div id="cell-5" class="clipboard-copy-txt"># acceder por la posicion 0 - con '.iloc'
+print(frutas.iloc[0]) # 10</div>
     
         </div>
     </div>
@@ -2479,6 +2603,19 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<blockquote><p><strong>Nota</strong>: De aquí en más utilizaremos <code>.loc</code> e <code>.iloc</code> para acceder a los elementos de un Dataframe, para ser <strong>explícito</strong> en la forma de acceder a los datos.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="seleccion-de-multiples-elementos">Selecci&#243;n de m&#250;ltiples elementos<a class="anchor-link" href="#seleccion-de-multiples-elementos">&#182;</a></h3><p>Podemos seleccionar múltiples elementos de la serie de varias maneras. Por ejemplo, podemos seleccionar los elementos por etiquetas de índice utilizando una lista de etiquetas:</p>
 
 </div>
@@ -2490,12 +2627,12 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-4">
+            <clipboard-copy for="cell-6">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2505,9 +2642,11 @@ dtype: int64</pre>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="p">[[</span><span class="s1">&#39;manzanas&#39;</span><span class="p">,</span> <span class="s1">&#39;naranjas&#39;</span><span class="p">]])</span> <span class="c1"># manzanas    10\nnaranjas     5\ndtype: int64</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># seleccionar por indices &#39;manzanas&#39; y &#39;naranjas&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;manzanas&#39;</span><span class="p">,</span> <span class="s1">&#39;naranjas&#39;</span><span class="p">]])</span>
 </pre></div>
-<div id="cell-4" class="clipboard-copy-txt">print(frutas[['manzanas', 'naranjas']]) # manzanas    10\nnaranjas     5\ndtype: int64</div>
+<div id="cell-6" class="clipboard-copy-txt"># seleccionar por indices 'manzanas' y 'naranjas'
+print(frutas.loc[['manzanas', 'naranjas']]) </div>
     
         </div>
     </div>
@@ -2559,12 +2698,12 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-5">
+            <clipboard-copy for="cell-7">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2574,9 +2713,11 @@ dtype: int64
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span> <span class="c1"># manzanas    10\nplátanos     7\ndtype: int64</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># acceder por posicion 0 y 2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
 </pre></div>
-<div id="cell-5" class="clipboard-copy-txt">print(frutas.iloc[[0, 2]]) # manzanas    10\nplátanos     7\ndtype: int64</div>
+<div id="cell-7" class="clipboard-copy-txt"># acceder por posicion 0 y 2
+print(frutas.iloc[[0, 2]])</div>
     
         </div>
     </div>
@@ -2628,12 +2769,12 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-6">
+            <clipboard-copy for="cell-8">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2643,9 +2784,11 @@ dtype: int64
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="p">[</span><span class="s1">&#39;manzanas&#39;</span><span class="p">:</span><span class="s1">&#39;plátanos&#39;</span><span class="p">])</span> <span class="c1"># manzanas    10\nnaranjas     5\nplátanos     7\ndtype: int64</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># rango de indices</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;manzanas&#39;</span><span class="p">:</span><span class="s1">&#39;plátanos&#39;</span><span class="p">])</span>
 </pre></div>
-<div id="cell-6" class="clipboard-copy-txt">print(frutas['manzanas':'plátanos']) # manzanas    10\nnaranjas     5\nplátanos     7\ndtype: int64</div>
+<div id="cell-8" class="clipboard-copy-txt"># rango de indices
+print(frutas.loc['manzanas':'plátanos']) </div>
     
         </div>
     </div>
@@ -2698,12 +2841,12 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-7">
+            <clipboard-copy for="cell-9">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2713,9 +2856,11 @@ dtype: int64
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># naranjas    5\nplátanos    7\ndtype: int64</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># rango de posiciones</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frutas</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
 </pre></div>
-<div id="cell-7" class="clipboard-copy-txt">print(frutas.iloc[1:3]) # naranjas    5\nplátanos    7\ndtype: int64</div>
+<div id="cell-9" class="clipboard-copy-txt"># rango de posiciones
+print(frutas.iloc[1:3]) </div>
     
         </div>
     </div>
@@ -2769,12 +2914,12 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-8">
+            <clipboard-copy for="cell-10">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2794,7 +2939,7 @@ dtype: int64
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">])</span>
 <span class="n">df</span>
 </pre></div>
-<div id="cell-8" class="clipboard-copy-txt"># Crear un DataFrame de ejemplo
+<div id="cell-10" class="clipboard-copy-txt"># Crear un DataFrame de ejemplo
 data = {
     'nombre': ['Juan', 'Ana', 'Pedro'], 
     'edad': [28, 23, 35], 
@@ -2820,7 +2965,7 @@ df</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -2885,12 +3030,12 @@ df</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-9">
+            <clipboard-copy for="cell-11">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2904,7 +3049,7 @@ df</div>
 <span class="n">nombre_columna</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;nombre&#39;</span><span class="p">]</span>
 <span class="n">nombre_columna</span>
 </pre></div>
-<div id="cell-9" class="clipboard-copy-txt"># Selección de una columna
+<div id="cell-11" class="clipboard-copy-txt"># Selección de una columna
 nombre_columna = df['nombre']
 nombre_columna</div>
     
@@ -2924,7 +3069,7 @@ nombre_columna</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -2949,12 +3094,12 @@ Name: nombre, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-10">
+            <clipboard-copy for="cell-12">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2968,7 +3113,7 @@ Name: nombre, dtype: object</pre>
 <span class="n">varias_columnas</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;nombre&#39;</span><span class="p">,</span> <span class="s1">&#39;edad&#39;</span><span class="p">]]</span>
 <span class="n">varias_columnas</span>
 </pre></div>
-<div id="cell-10" class="clipboard-copy-txt"># Selección de varias columnas
+<div id="cell-12" class="clipboard-copy-txt"># Selección de varias columnas
 varias_columnas = df[['nombre', 'edad']]
 varias_columnas</div>
     
@@ -2988,7 +3133,7 @@ varias_columnas</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -3061,12 +3206,12 @@ varias_columnas</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-11">
+            <clipboard-copy for="cell-13">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3080,7 +3225,7 @@ varias_columnas</div>
 <span class="n">fila</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
 <span class="n">fila</span>
 </pre></div>
-<div id="cell-11" class="clipboard-copy-txt"># Selección de una fila por etiqueta
+<div id="cell-13" class="clipboard-copy-txt"># Selección de una fila por etiqueta
 fila = df.loc['a']
 fila</div>
     
@@ -3100,7 +3245,7 @@ fila</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -3125,12 +3270,12 @@ Name: a, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-12">
+            <clipboard-copy for="cell-14">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3144,7 +3289,7 @@ Name: a, dtype: object</pre>
 <span class="n">varias_filas</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
 <span class="n">varias_filas</span>
 </pre></div>
-<div id="cell-12" class="clipboard-copy-txt"># Selección de varias filas por etiqueta
+<div id="cell-14" class="clipboard-copy-txt"># Selección de varias filas por etiqueta
 varias_filas = df.loc['a':'b']
 varias_filas</div>
     
@@ -3164,7 +3309,7 @@ varias_filas</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
@@ -3223,12 +3368,12 @@ varias_filas</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-13">
+            <clipboard-copy for="cell-15">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3242,7 +3387,7 @@ varias_filas</div>
 <span class="n">fila_posicion</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">fila_posicion</span>
 </pre></div>
-<div id="cell-13" class="clipboard-copy-txt"># Selección de una fila por posición
+<div id="cell-15" class="clipboard-copy-txt"># Selección de una fila por posición
 fila_posicion = df.iloc[0]
 fila_posicion</div>
     
@@ -3262,7 +3407,7 @@ fila_posicion</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
@@ -3287,12 +3432,12 @@ Name: a, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-14">
+            <clipboard-copy for="cell-16">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3306,7 +3451,7 @@ Name: a, dtype: object</pre>
 <span class="n">varias_filas_posicion</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
 <span class="n">varias_filas_posicion</span>
 </pre></div>
-<div id="cell-14" class="clipboard-copy-txt"># Selección de varias filas por posición
+<div id="cell-16" class="clipboard-copy-txt"># Selección de varias filas por posición
 varias_filas_posicion = df.iloc[0:2]
 varias_filas_posicion</div>
     
@@ -3326,7 +3471,7 @@ varias_filas_posicion</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
@@ -3397,12 +3542,12 @@ varias_filas_posicion</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-15">
+            <clipboard-copy for="cell-17">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3416,7 +3561,7 @@ varias_filas_posicion</div>
 <span class="n">subconjunto</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;nombre&#39;</span><span class="p">,</span> <span class="s1">&#39;edad&#39;</span><span class="p">]]</span>
 <span class="n">subconjunto</span>
 </pre></div>
-<div id="cell-15" class="clipboard-copy-txt"># Selección de filas y columnas por etiqueta
+<div id="cell-17" class="clipboard-copy-txt"># Selección de filas y columnas por etiqueta
 subconjunto = df.loc['a':'b', ['nombre', 'edad']]
 subconjunto</div>
     
@@ -3436,7 +3581,7 @@ subconjunto</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
@@ -3492,12 +3637,12 @@ subconjunto</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-16">
+            <clipboard-copy for="cell-18">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3511,7 +3656,7 @@ subconjunto</div>
 <span class="n">subconjunto_posicion</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
 <span class="n">subconjunto_posicion</span>
 </pre></div>
-<div id="cell-16" class="clipboard-copy-txt"># Selección de filas y columnas por posición
+<div id="cell-18" class="clipboard-copy-txt"># Selección de filas y columnas por posición
 subconjunto_posicion = df.iloc[0:2, 0:2]
 subconjunto_posicion</div>
     
@@ -3531,7 +3676,7 @@ subconjunto_posicion</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -3609,12 +3754,12 @@ subconjunto_posicion</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-17">
+            <clipboard-copy for="cell-19">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3633,7 +3778,7 @@ subconjunto_posicion</div>
 
 <span class="n">df</span>
 </pre></div>
-<div id="cell-17" class="clipboard-copy-txt">df = pd.DataFrame({
+<div id="cell-19" class="clipboard-copy-txt">df = pd.DataFrame({
     'col_1': [1, 2, 3, 4, 5], 
     'col_2': [6, 7, 8, 9, 10], 
     'col_3': [11, 12, 13, 14, 15]},
@@ -3658,7 +3803,7 @@ df</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -3735,12 +3880,12 @@ df</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-18">
+            <clipboard-copy for="cell-20">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3753,7 +3898,7 @@ df</div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Selección utilizando loc</span>
 <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;col_1&#39;</span><span class="p">,</span><span class="s1">&#39;col_2&#39;</span><span class="p">]]</span>
 </pre></div>
-<div id="cell-18" class="clipboard-copy-txt"># Selección utilizando loc
+<div id="cell-20" class="clipboard-copy-txt"># Selección utilizando loc
 df.loc['B':'D', ['col_1','col_2']]</div>
     
         </div>
@@ -3772,7 +3917,7 @@ df.loc['B':'D', ['col_1','col_2']]</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -3838,7 +3983,7 @@ df.loc['B':'D', ['col_1','col_2']]</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-19">
+            <clipboard-copy for="cell-21">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3851,7 +3996,7 @@ df.loc['B':'D', ['col_1','col_2']]</div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Selección utilizando iloc</span>
 <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
-<div id="cell-19" class="clipboard-copy-txt"># Selección utilizando iloc
+<div id="cell-21" class="clipboard-copy-txt"># Selección utilizando iloc
 df.iloc[1:4, 0:2]</div>
     
         </div>
@@ -3893,8 +4038,8 @@ df.iloc[1:4, 0:2]</div>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>A</th>
-      <th>B</th>
+      <th>col_1</th>
+      <th>col_2</th>
     </tr>
   </thead>
   <tbody>
