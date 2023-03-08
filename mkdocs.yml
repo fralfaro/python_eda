@@ -115,7 +115,8 @@ nav:
             - pandas/033_pivot_melt.ipynb
             - pandas/034_ejemplo_practico.ipynb
     - Visualización:
-        - visualization/01_intro.ipynb
+        - visualization/011_intro.ipynb
+        - visualization/012_types.ipynb
         - Matplotlib:
             - visualization/021_matplotlib.ipynb
             - visualization/022_lineplot.ipynb
