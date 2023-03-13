@@ -124,6 +124,7 @@ nav:
             - visualization/024_barplot.ipynb
             - visualization/025_histplot.ipynb
             - visualization/026_heatmap.ipynb
+            - visualization/027_boxplot.ipynb
         - Seaborn:
             - visualization/031_seaborn.ipynb
             - visualization/032_lineplot.ipynb
@@ -131,6 +132,7 @@ nav:
             - visualization/034_barplot.ipynb
             - visualization/035_histplot.ipynb
             - visualization/036_heatmap.ipynb
+            - visualization/037_boxplot.ipynb
 
 
 
