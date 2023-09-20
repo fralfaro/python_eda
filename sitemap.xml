@@ -1,202 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/</loc>
+         <loc>https://github.com/fralfaro/python_eda/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/__init__/</loc>
+         <loc>https://github.com/fralfaro/python_eda/__init__/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/intro/</loc>
+         <loc>https://github.com/fralfaro/python_eda/intro/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/01_intro/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/01_intro/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/021_objetos/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/021_objetos/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/022_operaciones/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/022_operaciones/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/023_index/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/023_index/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/024_algebra_lineal/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/024_algebra_lineal/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/025_broadcasting/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/025_broadcasting/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/numpy/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/numpy/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/scipy/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/scipy/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/numpy/sympy/</loc>
+         <loc>https://github.com/fralfaro/python_eda/numpy/sympy/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/01_pandas_intro/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/01_pandas_intro/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/021_objetos/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/021_objetos/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/022_op_basicas/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/022_op_basicas/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/023_index/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/023_index/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/024_filtros/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/024_filtros/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/025_nulos_duplicados/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/025_nulos_duplicados/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/026_fechas/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/026_fechas/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/027_ejemplo_practico/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/027_ejemplo_practico/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/031_groupby/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/031_groupby/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/032_merge_concat/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/032_merge_concat/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/033_pivot_melt/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/033_pivot_melt/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/pandas/034_ejemplo_practico/</loc>
+         <loc>https://github.com/fralfaro/python_eda/pandas/034_ejemplo_practico/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/011_intro/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/011_intro/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/012_types/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/012_types/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/021_matplotlib/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/021_matplotlib/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/022_lineplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/022_lineplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/023_scatterplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/023_scatterplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/024_barplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/024_barplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/025_histplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/025_histplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/026_heatmap/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/026_heatmap/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/027_boxplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/027_boxplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/031_seaborn/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/031_seaborn/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/032_lineplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/032_lineplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/033_scatterplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/033_scatterplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/034_barplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/034_barplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/035_histplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/035_histplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/036_heatmap/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/036_heatmap/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_data_manipulation/visualization/037_boxplot/</loc>
+         <loc>https://github.com/fralfaro/python_eda/visualization/037_boxplot/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
