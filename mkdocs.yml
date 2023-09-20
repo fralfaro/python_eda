@@ -91,7 +91,6 @@ plugins:
 # TOC
 nav:
     - Home: index.md
-    - Introducción: intro.md
     - Computación Científica:
         - Numpy:
             - numpy/01_intro.ipynb
