@@ -1,8 +1,5 @@
 # Manipulación de Datos
 
-<img src="https://cdn.worldvectorlogo.com/logos/python-3.svg" alt="" align="center" width="500"/>
-
-
 ## Contenidos temáticos
 
 ### Computación Científica
