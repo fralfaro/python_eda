@@ -2,13 +2,13 @@
 
 # Project information
 site_name: Data Manipulation
-site_url: https://github.com/fralfaro/python_data_manipulation
+site_url: https://github.com/fralfaro/python_eda
 site_author: Francisco Alfaro
 site_description:
 
 # Repository
-repo_name: fralfaro/python_data_manipulation
-repo_url: https://github.com/fralfaro/python_data_manipulation
+repo_name: fralfaro/python_eda
+repo_url: https://github.com/fralfaro/python_eda
 edit_uri: ''
 
 
