@@ -41,11 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_eda/numpy/numpy/</loc>
-         <lastmod>2023-09-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/fralfaro/python_eda/numpy/scipy/</loc>
          <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
