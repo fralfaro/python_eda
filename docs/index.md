@@ -1,10 +1,30 @@
-# Manipulación de Datos
+# Análisis Exploratorio de Datos
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} AUTOR/A
+Francisco Alfaro Medina
+:::
+
+:::{grid-item-card} FECHA DE PUBLICACIÓN
+Octubre del 2023
+:::
+
+::::
 
 ## Contenidos temáticos
 
 ### Computación Científica
 
-<img src="./images/cc.png" align="center" width="450"/>
+```{figure} images/cc.png
+---
+scale: 50%
+align: center
+name: intro_01
+---
+Ejemplo de una rutina en la ciencia de la computación.
+```
 
 La **computación científica** es una disciplina que se 
 enfoca en la aplicación de técnicas computacionales 
@@ -27,7 +47,14 @@ o automóviles.
 
 ### Manipulación de Datos
 
-<img src="./images/dm.png" align="center"/>
+```{figure} images/dm.png
+---
+scale: 90%
+align: center
+name: intro_02
+---
+Esquema de trabajo en la manipulación de datos.
+```
 
 La **manipulación de datos** es el proceso de transformar o
 modificar datos para extraer conocimientos o generar nueva
@@ -57,7 +84,14 @@ integradas que hacen que la manipulación de datos sea más fácil y eficiente.
 
 #### Data Tabular
 
-<img src="./images/tabular.jpg" align="center"/>
+```{figure} images/tabular.jpg
+---
+scale: 50%
+align: center
+name: intro_03
+---
+Ejemplo de un conjunto de datos.
+```
 
 La **data tabular**, también conocida como **datos estructurados**,
 es un tipo de datos que se organiza en forma de tabla con filas y columnas.
@@ -83,7 +117,14 @@ Ejemplos comunes de datos tabulares incluyen:
 
 ### Visualización de Datos
 
-<img src="./images/vd.jpg" align="center"/>
+```{figure} images/vd.jpg
+---
+scale: 50%
+align: center
+name: intro_04
+---
+Ejemplos de distintos gráficos.
+```
 
 La **visualización de datos** es una técnica que
 consiste en representar información mediante gráficos, 

@@ -1,0 +1,49 @@
+# Table of contents
+format: jb-book
+root: docs/index.md
+parts:
+  - caption: Contenidos
+    numbered: True  # Only applies to chapters in Part 1.
+    chapters:
+    - file: docs/numpy/intro.md
+      sections:
+        - file: docs/numpy/01_intro.ipynb
+        - file: docs/numpy/021_objetos.ipynb
+        - file: docs/numpy/022_operaciones.ipynb
+        - file: docs/numpy/023_index.ipynb
+        - file: docs/numpy/024_algebra_lineal.ipynb
+        - file: docs/numpy/025_broadcasting.ipynb
+    - file: docs/pandas/intro.md
+      sections:
+        - file: docs/pandas/01_pandas_intro.ipynb
+        - file: docs/pandas/021_objetos.ipynb
+        - file: docs/pandas/022_op_basicas.ipynb
+        - file: docs/pandas/023_index.ipynb
+        - file: docs/pandas/024_filtros.ipynb
+        - file: docs/pandas/025_nulos_duplicados.ipynb
+        - file: docs/pandas/026_fechas.ipynb
+        - file: docs/pandas/027_ejemplo_practico.ipynb
+        - file: docs/pandas/031_groupby.ipynb
+        - file: docs/pandas/032_merge_concat.ipynb
+        - file: docs/pandas/033_pivot_melt.ipynb
+        - file: docs/pandas/034_ejemplo_practico.ipynb
+    - file: docs/visualization/intro.md
+      sections:
+        - file: docs/visualization/011_intro.ipynb
+        - file: docs/visualization/012_types.ipynb
+        - file: docs/visualization/021_matplotlib.ipynb
+          sections:
+            - file: docs/visualization/022_lineplot.ipynb
+            - file: docs/visualization/023_scatterplot.ipynb
+            - file: docs/visualization/024_barplot.ipynb
+            - file: docs/visualization/025_histplot.ipynb
+            - file: docs/visualization/026_heatmap.ipynb
+            - file: docs/visualization/027_boxplot.ipynb
+        - file: docs/visualization/031_seaborn.ipynb
+          sections:
+            - file: docs/visualization/032_lineplot.ipynb
+            - file: docs/visualization/033_scatterplot.ipynb
+            - file: docs/visualization/034_barplot.ipynb
+            - file: docs/visualization/035_histplot.ipynb
+            - file: docs/visualization/036_heatmap.ipynb
+            - file: docs/visualization/037_boxplot.ipynb
