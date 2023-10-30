@@ -3,7 +3,7 @@
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} AUTOR/A
+:::{grid-item-card} AUTOR
 Francisco Alfaro Medina
 :::
 
