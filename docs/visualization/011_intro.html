@@ -1,0 +1,1247 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>3.1. Introducción &#8212; Análisis Exploratorio de Datos</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-TB617QHPDG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-TB617QHPDG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/visualization/011_intro';</script>
+    <link rel="shortcut icon" href="../../_static/icon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3.2. Tipos de Gráficos" href="012_types.html" />
+    <link rel="prev" title="3. Visualización" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/python.svg" class="logo__image only-light" alt="Análisis Exploratorio de Datos - Home"/>
+    <script>document.write(`<img src="../../_static/python.svg" class="logo__image only-dark" alt="Análisis Exploratorio de Datos - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Análisis Exploratorio de Datos
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../numpy/intro.html">1. Computación Científica</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../numpy/01_intro.html">1.1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../numpy/021_objetos.html">1.2. Objetos en Numpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../numpy/022_operaciones.html">1.3. Operaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../numpy/023_index.html">1.4. Indexación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../numpy/024_algebra_lineal.html">1.5. Algebra Lineal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../numpy/025_broadcasting.html">1.6. Broadcasting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../pandas/intro.html">2. Manipulación de Datos</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/01_pandas_intro.html">2.1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/021_objetos.html">2.2. Objetos de Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/022_op_basicas.html">2.3. Operaciones en Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/023_index.html">2.4. Indexación y Selección</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/024_filtros.html">2.5. Filtrar Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/025_nulos_duplicados.html">2.6. Valores Nulos y Duplicados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/026_fechas.html">2.7. Manipulación de Fechas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/027_ejemplo_practico.html">2.8. Ejemplo Práctico 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/031_groupby.html">2.9. Groupby</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/032_merge_concat.html">2.10. Merge y Concat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/033_pivot_melt.html">2.11. Pivot y Melt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pandas/034_ejemplo_practico.html">2.12. Ejemplo Práctico 02</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="intro.html">3. Visualización</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="012_types.html">3.2. Tipos de Gráficos</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="021_matplotlib.html">3.3. Matplotlib</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="022_lineplot.html">3.3.4. Line Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="023_scatterplot.html">3.3.5. Scatter Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="024_barplot.html">3.3.6. Bar Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="025_histplot.html">3.3.7. Hist Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="026_heatmap.html">3.3.8. Heat Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="027_boxplot.html">3.3.9. Boxplot</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="031_seaborn.html">3.4. Seaborn</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="032_lineplot.html">3.4.3. Line Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="033_scatterplot.html">3.4.4. Scatter Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="034_barplot.html">3.4.5. Bar Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="035_histplot.html">3.4.6. Hist Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="036_heatmap.html">3.4.7. Heat Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="037_boxplot.html">3.4.8. Boxplot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/fralfaro/python_eda" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/docs/visualization/011_intro.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introducción</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.1.1. Introducción</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#malos-graficos">3.1.1.1. Malos Gráficos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buenos-graficos">3.1.1.2. Buenos Gráficos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primeras-visualizaciones">3.1.1.3. Primeras visualizaciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-utilizar-graficos">3.1.2. ¿Por qué utilizar gráficos?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuarteto-de-anscombe">3.1.2.1. Cuarteto de ANSCOMBE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paradoja-de-simpson">3.1.2.2. Paradoja de Simpson</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria-de-visualizacion">3.1.3. Teoría de visualización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consejos-generales">3.1.3.1. Consejos generales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-aspectos-de-la-visualizacion">3.1.4. Más Aspectos de la Visualización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#honestidad">3.1.4.1. Honestidad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priorizacion">3.1.4.2. Priorización</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percepcion">3.1.4.3. Percepción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#colormaps">3.1.4.4. Colormaps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-landscape">3.1.5. Python Landscape</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><a href="https://colab.research.google.com/github/fralfaro/python_eda/blob/main/docs/visualization/011_intro.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<section class="tex2jax_ignore mathjax_ignore" id="introduccion">
+<h1><span class="section-number">3.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2><span class="section-number">3.1.1. </span>Introducción<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>Aprender sobre visualización es importante por varias razones:</p>
+<ul class="simple">
+<li><p><strong>Comunicar información compleja de manera clara y efectiva</strong>: Al presentar datos de una manera visual, es más fácil identificar patrones y tendencias, así como también hacer comparaciones y contrastes. Esto es especialmente importante cuando se trabaja con grandes conjuntos de datos o cuando se trata de presentar información a un público diverso.</p></li>
+<li><p><strong>Descubrir información oculta o desconocida</strong>: A menudo, los datos pueden contener patrones o relaciones que no son obvios a simple vista, pero que pueden ser descubiertos mediante la exploración y la visualización. La visualización también puede ayudar a identificar errores y anomalías en los datos, lo que puede ser importante para la toma de decisiones y la planificación.</p></li>
+<li><p><strong>Mejorar la capacidad de análisis de datos</strong>: Al comprender cómo presentar datos de manera efectiva, se puede desarrollar una mejor comprensión de los datos y las relaciones que existen entre ellos. Esto puede ayudar a tomar decisiones informadas basadas en datos y a identificar tendencias y oportunidades que de otra manera podrían haber pasado desapercibidas.</p></li>
+</ul>
+<section id="malos-graficos">
+<h3><span class="section-number">3.1.1.1. </span>Malos Gráficos<a class="headerlink" href="#malos-graficos" title="Permalink to this heading">#</a></h3>
+<p><img alt="image info" src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/Fox1.png" /></p>
+<p><img alt="image info" src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/male_height.jpg" /></p>
+</section>
+<section id="buenos-graficos">
+<h3><span class="section-number">3.1.1.2. </span>Buenos Gráficos<a class="headerlink" href="#buenos-graficos" title="Permalink to this heading">#</a></h3>
+<p><img alt="image info" src="https://cdn.slingshotapp.io/wp-content/uploads/2021/12/1.slingshot-marketing-performance-data-visualization-example-768x485.png" /></p>
+</section>
+<section id="primeras-visualizaciones">
+<h3><span class="section-number">3.1.1.3. </span>Primeras visualizaciones<a class="headerlink" href="#primeras-visualizaciones" title="Permalink to this heading">#</a></h3>
+<p><strong>Campaña de Napoleón a Moscú (Charles Minard, 1889)</strong></p>
+<p>Gráfico que muestra el número de las fuerzas francesas en su marcha hacia Moscú y durante la retirada, por Charles Minard. También contiene información ambiental como la temperatura por fecha.</p>
+<p><img alt="image info" src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/Napoleon.png" /></p>
+<p><strong>Mapa del cólera (John Snow, 1855)</strong></p>
+<p>Gráfico que muestra los casos de cólera durante la epidemia en Londres de 1854 y Las cruces la ubicación de las bombas de agua.</p>
+<p><img alt="image info" src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/Colera.png" /></p>
+</section>
+</section>
+<section id="por-que-utilizar-graficos">
+<h2><span class="section-number">3.1.2. </span>¿Por qué utilizar gráficos?<a class="headerlink" href="#por-que-utilizar-graficos" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p>El 70 % de los receptores sensoriales del cuerpo humano está dedicado a la visión.</p></li>
+<li><p>Cerebro ha sido entrenado evolutivamente para interpretar la información visual de manera masiva.</p>
+<p><em>“The eye and the visual cortex of the brain form a massively
+parallel processor that provides the highest bandwidth channel
+into human cognitive centers”
+— Colin Ware, Information Visualization, 2004.</em></p>
+</li>
+</ul>
+<blockquote>
+<div><p><strong>Nota</strong>: En lo siguientes ejemplos utilizaremos código de <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> y <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>, sin embargo, no entraremos en detalles debido a que cada una de estas librerías será estudiada en los siguientes capítulos.</p>
+</div></blockquote>
+<section id="cuarteto-de-anscombe">
+<h3><span class="section-number">3.1.2.1. </span>Cuarteto de ANSCOMBE<a class="headerlink" href="#cuarteto-de-anscombe" title="Permalink to this heading">#</a></h3>
+<p>El <strong>Cuarteto de Anscombe</strong> es un conjunto de cuatro conjuntos de datos que tienen las mismas estadísticas descriptivas (medias, varianzas, correlaciones y regresiones), pero que se ven muy diferentes cuando se visualizan. Fueron presentados por el estadístico Francis Anscombe en 1973 para demostrar la importancia de la visualización en el análisis de datos.</p>
+<p>Los cuatro conjuntos de datos consisten en pares de variables <strong>x</strong> e <strong>y</strong>, y cada conjunto representa un tipo diferente de relación entre las variables. A simple vista, los cuatro conjuntos parecen tener distribuciones y relaciones completamente diferentes entre sí, pero cuando se analizan las estadísticas descriptivas, todas son idénticas.</p>
+<div class="cell tag_{ tag_&quot;tags&quot;: tag_[ tag_&quot;hide-input&quot; tag_] tag_} docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display_html</span>
+
+<span class="k">def</span> <span class="nf">display_side_by_side</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">html_str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">html_str</span> <span class="o">+=</span> <span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">()</span>
+        <span class="n">html_str</span> <span class="o">+=</span> <span class="s1">&#39;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#39;</span>
+    <span class="n">display_html</span><span class="p">(</span>
+        <span class="n">html_str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;table&#39;</span><span class="p">,</span><span class="s1">&#39;table style=&quot;display:inline&quot;&#39;</span><span class="p">),</span> 
+        <span class="n">raw</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Cargar los datos del cuarteto de Anscombe</span>
+<span class="n">anscombe</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;anscombe&quot;</span><span class="p">)</span>
+
+<span class="c1"># Dividir los datos en cuatro conjuntos según el valor de &quot;dataset&quot;</span>
+<span class="n">ds1</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;I&#39;</span><span class="p">]</span>
+<span class="n">ds2</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;II&#39;</span><span class="p">]</span>
+<span class="n">ds3</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;III&#39;</span><span class="p">]</span>
+<span class="n">ds4</span> <span class="o">=</span> <span class="n">anscombe</span><span class="p">[</span><span class="n">anscombe</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;IV&#39;</span><span class="p">]</span>
+
+<span class="c1"># Mostrar estadisticas para cada conjunto</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadisticas Basicas:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="s2">&quot; &quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset I </span><span class="si">{</span><span class="mi">13</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset II&quot;</span><span class="p">)</span>
+<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds1</span><span class="o">.</span><span class="n">describe</span><span class="p">(),</span><span class="n">ds2</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset III </span><span class="si">{</span><span class="mi">13</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset IV&quot;</span><span class="p">)</span>
+<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds3</span><span class="o">.</span><span class="n">describe</span><span class="p">(),</span><span class="n">ds4</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+
+<span class="c1"># Mostrar  correlaciones para cada conjunto</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correlaciones:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset I </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset II </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset III </span><span class="si">{</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s2">Dataset IV&quot;</span><span class="p">)</span>
+<span class="n">display_side_by_side</span><span class="p">(</span><span class="n">ds1</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds2</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds3</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="n">ds4</span><span class="o">.</span><span class="n">corr</span><span class="p">())</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Graficos:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Crear una figura con cuatro subplots</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="c1"># Graficar cada conjunto de datos en su respectivo subplot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds1</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds2</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds3</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ds4</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># Agregar títulos a los subplots</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset I&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset II&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset III&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Dataset IV&#39;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadisticas Basicas:
+
+          Dataset I              Dataset II
+</pre></div>
+</div>
+<div class="output text_html"><table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>11.000000</td>
+      <td>11.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>9.000000</td>
+      <td>7.500909</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3.316625</td>
+      <td>2.031568</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>4.000000</td>
+      <td>4.260000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>6.500000</td>
+      <td>6.315000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>9.000000</td>
+      <td>7.580000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>11.500000</td>
+      <td>8.570000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>14.000000</td>
+      <td>10.840000</td>
+    </tr>
+  </tbody>
+</table style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;<table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>11.000000</td>
+      <td>11.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>9.000000</td>
+      <td>7.500909</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3.316625</td>
+      <td>2.031657</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>4.000000</td>
+      <td>3.100000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>6.500000</td>
+      <td>6.695000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>9.000000</td>
+      <td>8.140000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>11.500000</td>
+      <td>8.950000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>14.000000</td>
+      <td>9.260000</td>
+    </tr>
+  </tbody>
+</table style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>          Dataset III              Dataset IV
+</pre></div>
+</div>
+<div class="output text_html"><table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>11.000000</td>
+      <td>11.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>9.000000</td>
+      <td>7.500000</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3.316625</td>
+      <td>2.030424</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>4.000000</td>
+      <td>5.390000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>6.500000</td>
+      <td>6.250000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>9.000000</td>
+      <td>7.110000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>11.500000</td>
+      <td>7.980000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>14.000000</td>
+      <td>12.740000</td>
+    </tr>
+  </tbody>
+</table style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;<table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>11.000000</td>
+      <td>11.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>9.000000</td>
+      <td>7.500909</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3.316625</td>
+      <td>2.030579</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>8.000000</td>
+      <td>5.250000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>8.000000</td>
+      <td>6.170000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>8.000000</td>
+      <td>7.040000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>8.000000</td>
+      <td>8.190000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>19.000000</td>
+      <td>12.500000</td>
+    </tr>
+  </tbody>
+</table style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlaciones:
+
+     Dataset I           Dataset II           Dataset III           Dataset IV
+</pre></div>
+</div>
+<div class="output text_html"><table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>x</th>
+      <td>1.000000</td>
+      <td>0.816421</td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td>0.816421</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;<table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>x</th>
+      <td>1.000000</td>
+      <td>0.816237</td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td>0.816237</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;<table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>x</th>
+      <td>1.000000</td>
+      <td>0.816287</td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td>0.816287</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;<table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>x</th>
+      <td>1.000000</td>
+      <td>0.816521</td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td>0.816521</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Graficos:
+</pre></div>
+</div>
+<img alt="../../_images/93a0233fccd57872fe22adde103458eb5dad3fe4522ba1ae7918bc09ae9af066.png" src="../../_images/93a0233fccd57872fe22adde103458eb5dad3fe4522ba1ae7918bc09ae9af066.png" />
+</div>
+</div>
+</section>
+<section id="paradoja-de-simpson">
+<h3><span class="section-number">3.1.2.2. </span>Paradoja de Simpson<a class="headerlink" href="#paradoja-de-simpson" title="Permalink to this heading">#</a></h3>
+<p>La <strong>Paradoja de Simpson</strong> es un fenómeno en la visualización de datos que puede ocurrir cuando se analizan datos de diferentes subgrupos o categorías de una población. La paradoja se produce cuando una tendencia o patrón que aparece en cada subgrupo se invierte o desaparece cuando se combinan los datos de todos los subgrupos.</p>
+<p>Supongamos que tienes datos de la tasa de éxito de un tratamiento médico para tres grupos de pacientes: uno con edad joven, uno con edad media y uno con edad avanzada. Los datos se presentan en la siguiente tabla:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Grupo 1</p></th>
+<th class="head"><p>Grupo 2</p></th>
+<th class="head"><p>Grupo 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tasa de éxito</p></td>
+<td><p>90%</p></td>
+<td><p>85%</p></td>
+<td><p>70%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Número de casos</p></td>
+<td><p>100</p></td>
+<td><p>200</p></td>
+<td><p>300</p></td>
+</tr>
+</tbody>
+</table>
+<p>En la tabla anterior, se puede observar que la tasa de éxito general del tratamiento es del 80%. Sin embargo, si se examina cada grupo de forma individual, la tasa de éxito para cada grupo es mayor en comparación con el promedio general. Esto es un ejemplo de la Paradoja de Simpson.</p>
+<p>A continuación se presenta un código en Python que ilustra este ejemplo:</p>
+<div class="cell tag_{ tag_&quot;tags&quot;: tag_[ tag_&quot;hide-input&quot; tag_] tag_} docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Crear un DataFrame con los datos</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Grupo&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Grupo 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Grupo 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Grupo 3&#39;</span><span class="p">],</span> 
+        <span class="s1">&#39;Tasa de éxito&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">],</span> 
+        <span class="s1">&#39;Número de casos&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">]}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># Calcular la tasa de éxito general</span>
+<span class="n">general_success_rate</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Tasa de éxito&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tasa de éxito general:&#39;</span><span class="p">,</span> <span class="n">general_success_rate</span><span class="p">)</span>
+
+<span class="c1"># Graficar los datos</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Grupo&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Tasa de éxito&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">general_success_rate</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Tasa de éxito&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Paradoja de Simpson&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tasa de éxito general: 0.8166666666666668
+</pre></div>
+</div>
+<img alt="../../_images/59d9fecbfc3cd5d79fdb0fa9fb8adbbefbeeb5650dba70886eddb8a3433a0d66.png" src="../../_images/59d9fecbfc3cd5d79fdb0fa9fb8adbbefbeeb5650dba70886eddb8a3433a0d66.png" />
+</div>
+</div>
+<p>Otro ejemplo sería aplicar un modelo de regresión líneal al conjunto de <strong>datos completos</strong> y luego aplicarlo al conjunto de datos separado <strong>por categorías</strong>.</p>
+<div class="cell tag_{ tag_&quot;tags&quot;: tag_[ tag_&quot;hide-input&quot; tag_] tag_} docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="c1"># Generate &#39;random&#39; data</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="mf">2.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1.5</span>   <span class="c1"># Array of 100 values with mean = 1.5, stddev = 2.5</span>
+<span class="n">res</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>       <span class="c1"># Generate 100 residual terms</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mf">0.3</span> <span class="o">*</span> <span class="n">X</span> <span class="o">+</span> <span class="n">res</span>                  <span class="c1"># Actual values of Y</span>
+
+<span class="c1"># Create pandas dataframe to store our X and y values</span>
+<span class="n">ds1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">X</span><span class="o">+</span><span class="mi">10</span><span class="p">,</span>
+    <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">y</span><span class="o">+</span><span class="mi">10</span><span class="p">}</span>
+<span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Dataset I&#39;</span><span class="p">)</span>
+
+<span class="n">ds2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">X</span><span class="p">,</span>
+    <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">y</span><span class="p">}</span>
+<span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Dataset II&#39;</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">ds1</span><span class="p">,</span><span class="n">ds2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_{ tag_&quot;tags&quot;: tag_[ tag_&quot;hide-input&quot; tag_] tag_} docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grafico para todo el conjunto de datos&quot;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>  <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>   <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Grafico para todo el conjunto de datos
+</pre></div>
+</div>
+<img alt="../../_images/908984cdcfb4a845c80e4dbf4fbb522f46a540e758c5d5a56182d7720ab0a44b.png" src="../../_images/908984cdcfb4a845c80e4dbf4fbb522f46a540e758c5d5a56182d7720ab0a44b.png" />
+</div>
+</div>
+<div class="cell tag_{ tag_&quot;tags&quot;: tag_[ tag_&quot;hide-input&quot; tag_] tag_} docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grafico para los grupos por separados&quot;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>    <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Grafico para los grupos por separados
+</pre></div>
+</div>
+<img alt="../../_images/d7a615e27f2114b49d025a8a4536b487df4e7a2a18aa97550a1476e4cf2543d2.png" src="../../_images/d7a615e27f2114b49d025a8a4536b487df4e7a2a18aa97550a1476e4cf2543d2.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="teoria-de-visualizacion">
+<h2><span class="section-number">3.1.3. </span>Teoría de visualización<a class="headerlink" href="#teoria-de-visualizacion" title="Permalink to this heading">#</a></h2>
+<p>La <strong>teoría de visualización</strong> se refiere a la investigación y el estudio de cómo las personas procesan, interpretan y comprenden información visual. La visualización puede involucrar cualquier tipo de información que pueda ser representada visualmente, incluyendo gráficos, diagramas, mapas, fotografías y videos.</p>
+<p>Algunos de los conceptos y principios importantes en la teoría de visualización incluyen:</p>
+<ul class="simple">
+<li><p><strong>Percepción visual</strong>: Cómo procesamos y entendemos la información visual a través de nuestros sentidos.</p></li>
+<li><p><strong>Cognición visual</strong>: Cómo procesamos y entendemos la información visual a través de nuestros procesos mentales, como la atención, la memoria y la toma de decisiones.</p></li>
+<li><p><strong>Diseño visual</strong>: Cómo se pueden crear visualizaciones efectivas y atractivas para comunicar información de manera clara y efectiva.</p></li>
+<li><p><strong>Interactividad visual</strong>: Cómo las visualizaciones interactivas pueden ayudar a los usuarios a explorar y comprender mejor la información visual.</p></li>
+</ul>
+<section id="consejos-generales">
+<h3><span class="section-number">3.1.3.1. </span>Consejos generales<a class="headerlink" href="#consejos-generales" title="Permalink to this heading">#</a></h3>
+<p><strong>Noah Iliinsky</strong> es un experto en visualización de datos y ha identificado cuatro pilares fundamentales de la visualización.</p>
+<p>Estos pilares son:</p>
+<ul class="simple">
+<li><p><strong>Contenido</strong>: El contenido se refiere a la información que se está visualizando. Para que la visualización sea efectiva, es importante tener una comprensión clara del contenido y cómo se relaciona con el objetivo de la visualización.</p></li>
+<li><p><strong>Función</strong>: La función se refiere al propósito de la visualización. ¿Qué se espera que haga la visualización? ¿Debe mostrar una tendencia, comparar datos o explorar patrones? Es importante tener en cuenta la función de la visualización para asegurarse de que se está diseñando de manera efectiva.</p></li>
+<li><p><strong>Forma</strong>: La forma se refiere a la apariencia visual de la visualización. Esto incluye cosas como el tipo de gráfico o diagrama utilizado, la paleta de colores y la tipografía. La forma debe ser coherente y legible para que la visualización sea fácil de entender.</p></li>
+<li><p><strong>Audiencia</strong>: La audiencia se refiere a las personas que verán la visualización. La comprensión de la audiencia es esencial para determinar el nivel de detalle y complejidad adecuados para la visualización. La visualización debe ser accesible y comprensible para su audiencia objetivo.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Nota</strong>: Se recomienda ver el siguiente <a class="reference external" href="https://www.youtube.com/watch?v=nC92wIzpQFE&amp;ab_channel=StarsConf">video</a> para profundizar estos conceptos</p>
+</div></blockquote>
+</section>
+</section>
+<section id="mas-aspectos-de-la-visualizacion">
+<h2><span class="section-number">3.1.4. </span>Más Aspectos de la Visualización<a class="headerlink" href="#mas-aspectos-de-la-visualizacion" title="Permalink to this heading">#</a></h2>
+<section id="honestidad">
+<h3><span class="section-number">3.1.4.1. </span>Honestidad<a class="headerlink" href="#honestidad" title="Permalink to this heading">#</a></h3>
+<p>El ojo humano no tiene la misma precisión al estimar distintas atribuciones:</p>
+<ul class="simple">
+<li><p><strong>Largo</strong>: Bien estimado y sin sesgo, con un factor multiplicativo de 0.9 a 1.1.</p></li>
+<li><p><strong>Área</strong>: Subestimado y con sesgo, con un factor multiplicativo de 0.6 a 0.9.</p></li>
+<li><p><strong>Volumen</strong>: Muy subestimado y con sesgo, con un factor multiplicativo de 0.5 a 0.8.</p></li>
+</ul>
+<p>Resulta inadecuado realizar gráficos de datos utilizando áreas o volúmenes si no queda claro la atribución utilizada.
+<img alt="image info" src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/Honestidad2.png" /></p>
+<p>Una pseudo-excepción la constituyen los <em>pie-chart</em> o gráficos circulares,
+porque el ojo humano distingue bien ángulos y segmentos de círculo,
+y porque es posible indicar los porcentajes respectivos.</p>
+<div class="cell tag_{ tag_&quot;tags&quot;: tag_[ tag_&quot;hide-input&quot; tag_] tag_} docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pie chart, where the slices will be ordered and plotted counter-clockwise:</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="s1">&#39;Frogs&#39;</span><span class="p">,</span> <span class="s1">&#39;Hogs&#39;</span><span class="p">,</span> <span class="s1">&#39;Dogs&#39;</span><span class="p">,</span> <span class="s1">&#39;Logs&#39;</span>
+<span class="n">sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">explode</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># only &quot;explode&quot; the 2nd slice (i.e. &#39;Hogs&#39;)</span>
+
+<span class="n">fig1</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span>
+    <span class="n">sizes</span><span class="p">,</span>
+    <span class="n">explode</span><span class="o">=</span><span class="n">explode</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span>
+    <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">startangle</span><span class="o">=</span><span class="mi">90</span>
+<span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>  <span class="c1"># Equal aspect ratio ensures that pie is drawn as a circle.</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/b2a5ad9312f2d1eba84911be6d4efdb969ec4d039d2f2e44ae3ed746c1d205b9.png" src="../../_images/b2a5ad9312f2d1eba84911be6d4efdb969ec4d039d2f2e44ae3ed746c1d205b9.png" />
+</div>
+</div>
+</section>
+<section id="priorizacion">
+<h3><span class="section-number">3.1.4.2. </span>Priorización<a class="headerlink" href="#priorizacion" title="Permalink to this heading">#</a></h3>
+<p>Dato más importante debe utilizar elemento de mejor percepción.</p>
+<div class="cell tag_{ tag_&quot;tags&quot;: tag_[ tag_&quot;hide-input&quot; tag_] tag_} docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">31</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="mi">80</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">*</span><span class="n">x</span> <span class="o">/</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="mi">75</span> <span class="o">+</span> <span class="mi">25</span> <span class="o">*</span><span class="n">x</span> <span class="o">/</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="s1">&#39;ok&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="s1">&#39;sk&#39;</span><span class="p">)</span>
+
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="s1">&#39;ob&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="s1">&#39;or&#39;</span><span class="p">)</span>
+
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="s1">&#39;ob&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="s1">&#39;*k&#39;</span><span class="p">)</span>
+
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="s1">&#39;sr&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="s1">&#39;ob&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/a4682e4bbd575069c86e9d1767c11924eda2a44f6431ec28f67b080cd14ecfbe.png" src="../../_images/a4682e4bbd575069c86e9d1767c11924eda2a44f6431ec28f67b080cd14ecfbe.png" />
+</div>
+</div>
+</section>
+<section id="percepcion">
+<h3><span class="section-number">3.1.4.3. </span>Percepción<a class="headerlink" href="#percepcion" title="Permalink to this heading">#</a></h3>
+<p>No todos los elementos tienen la misma percepción a nivel del sistema visual. En particular, el color y la forma son elementos preatentivos: un color distinto o una forma distinta se reconocen de manera no conciente.</p>
+<p>Ejemplos de elementos preatentivos.</p>
+<img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/preatentivo1.png" alt="" width="600" align="middle"/>
+<img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/preatentivo2.png" alt="" width="600" align="middle"/>
+<p>El sistema visual humano puede estimar con precisión siguientes atributos visuales:</p>
+<ol class="arabic simple">
+<li><p>Posición</p></li>
+<li><p>Largo</p></li>
+<li><p>Pendiente</p></li>
+<li><p>Ángulo</p></li>
+<li><p>Área</p></li>
+<li><p>Volumen</p></li>
+<li><p>Color</p></li>
+</ol>
+<p>Utilice el atributo que se estima con mayor precisión cuando sea posible.</p>
+</section>
+<section id="colormaps">
+<h3><span class="section-number">3.1.4.4. </span>Colormaps<a class="headerlink" href="#colormaps" title="Permalink to this heading">#</a></h3>
+<p>Puesto que la percepción del color tiene muy baja precisión, resulta <em><strong>inadecuado</strong></em> tratar de representar un valor numérico con colores.</p>
+<ul class="simple">
+<li><p>¿Qué diferencia numérica existe entre el verde y el rojo?</p></li>
+<li><p>¿Que asociación preexistente posee el color rojo, el amarillo y el verde?</p></li>
+<li><p>¿Con cuánta precisión podemos distinguir valores en una escala de grises?</p></li>
+</ul>
+<p><img alt="image info" src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/colormap.png" /></p>
+</section>
+</section>
+<section id="python-landscape">
+<h2><span class="section-number">3.1.5. </span>Python Landscape<a class="headerlink" href="#python-landscape" title="Permalink to this heading">#</a></h2>
+<p>Para empezar, <a class="reference external" href="https://pyviz.org/">PyViz</a> es un sitio web que se dedica a ayudar a los usuarios a decidir dentro de las mejores herramientas de visualización open-source implementadas en Python, dependiendo de sus necesidades y objetivos. Mucho de lo que se menciona en esta sección está en detalle en la página web del proyecto PyViz.</p>
+<p>Algunas de las librerías de visualización de Python más conocidas son:</p>
+<p><img alt="landscape" src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/visualization/images/landscape.png" /></p>
+<p>Este esquema es una adaptación de uno presentado en la charla <a class="reference external" href="https://us.pycon.org/2017/schedule/presentation/616/"><em>The Python Visualization Landscape</em></a> realizada por <a class="reference external" href="http://vanderplas.com/">Jake VanderPlas</a> en la PyCon 2017.</p>
+<p>Cada una de estas librerías fue creada para satisfacer diferentes necesidades, algunas han ganado más adeptos que otras por uno u otro motivo. Tal como avanza la tecnología, estas librerías se actualizan o se crean nuevas, la importancia no recae en ser un experto en una, si no en saber adaptarse a las situaciones, tomar la mejor decicisión y escoger según nuestras necesidades y preferencias. Por ejemplo, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> nació como una solución para imitar los gráficos de <code class="docutils literal notranslate"><span class="pre">MATLAB</span></code> (puedes ver la historia completa <a class="reference external" href="https://matplotlib.org/users/history.html">aquí</a>), manteniendo una sintaxis similar y con ello poder crear gráficos <strong>estáticos</strong> de muy buen nivel.</p>
+<p>Debido al éxito de <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> en la comunidad, nacen librerías basadas ella. Algunos ejemplos son:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">seaborn</span></code> se basa en <code class="docutils literal notranslate"><span class="pre">matpĺotlib</span></code> pero su nicho corresponde a las visualizaciones estadísticas.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ggpy</span></code> una suerte de copia a <code class="docutils literal notranslate"><span class="pre">ggplot2</span></code> perteneciente al lenguaje de programación <code class="docutils literal notranslate"><span class="pre">R</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">networkx</span></code> visualizaciones de grafos.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> no es una librería de visualización propiamente tal, pero utiliza a <code class="docutils literal notranslate"><span class="pre">matplotplib</span></code> como <em>bakcned</em> en los métodos con tal de crear gráficos de manera muy rápida, e.g. <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.plot.bar()</span></code></p></li>
+</ul>
+<p>Por otro lado, con tal de crear visualizaciones <strong>interactivas</strong> aparecen librerías basadas en <code class="docutils literal notranslate"><span class="pre">javascript</span></code>, algunas de las más conocidas en Python son:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">bokeh</span></code> tiene como objetivo proporcionar gráficos versátiles, elegantes e incluso interactivos, teniendo una gran performance con grandes datasets o incluso streaming de datos.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">plotly</span></code> visualizaciones interactivas que en conjunto a <code class="docutils literal notranslate"><span class="pre">Dash</span></code> (de la misma empresa) permite crear aplicaciones webs, similar a <code class="docutils literal notranslate"><span class="pre">shiny</span></code> de <code class="docutils literal notranslate"><span class="pre">R</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">D3.js</span></code> a pesar de estar basado en <code class="docutils literal notranslate"><span class="pre">javascript</span></code> se ha ganado un lugar en el corazón de toda la comunidad, debido a la ilimitada cantidad de visualizaciones que son posibles de hacer, por ejemplo, la <a class="reference external" href="https://mallas.labcomp.cl/">malla interactiva</a> que hizo un estudiante de la UTFSM está hecha en <code class="docutils literal notranslate"><span class="pre">D3.js</span></code>.</p></li>
+</ul>
+<p>De las librerías más recientes está <code class="docutils literal notranslate"><span class="pre">Altair</span></code>, que consiste en visualizaciones declarativas (ya lo veremos en el próximo laboratorio). Construída sobre <code class="docutils literal notranslate"><span class="pre">Vega-Lite</span></code>, a su vez que esté está sobre <code class="docutils literal notranslate"><span class="pre">Vega</span></code> y este finalmente sobre <code class="docutils literal notranslate"><span class="pre">D3.js</span></code>. <code class="docutils literal notranslate"><span class="pre">Altair</span></code> permite crear visualizaciones estáticas e interactivas con pocas líneas de código, sin embargo, al ser relativamente nueva, aún existen funcionalidades en desarrollo o que simplemente aún no existen en esta librería pero en otras si.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs/visualization"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Visualización</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="012_types.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3.2. </span>Tipos de Gráficos</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.1.1. Introducción</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#malos-graficos">3.1.1.1. Malos Gráficos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buenos-graficos">3.1.1.2. Buenos Gráficos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primeras-visualizaciones">3.1.1.3. Primeras visualizaciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-utilizar-graficos">3.1.2. ¿Por qué utilizar gráficos?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuarteto-de-anscombe">3.1.2.1. Cuarteto de ANSCOMBE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paradoja-de-simpson">3.1.2.2. Paradoja de Simpson</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria-de-visualizacion">3.1.3. Teoría de visualización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consejos-generales">3.1.3.1. Consejos generales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-aspectos-de-la-visualizacion">3.1.4. Más Aspectos de la Visualización</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#honestidad">3.1.4.1. Honestidad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priorizacion">3.1.4.2. Priorización</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percepcion">3.1.4.3. Percepción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#colormaps">3.1.4.4. Colormaps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-landscape">3.1.5. Python Landscape</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Francisco Alfaro
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
