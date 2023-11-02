@@ -13,6 +13,7 @@ parts:
         - file: docs/numpy/023_index.ipynb
         - file: docs/numpy/024_algebra_lineal.ipynb
         - file: docs/numpy/025_broadcasting.ipynb
+        - file: docs/numpy/ejercicios.ipynb
     - file: docs/pandas/intro.md
       sections:
         - file: docs/pandas/01_pandas_intro.ipynb
