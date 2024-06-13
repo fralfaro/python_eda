@@ -106,7 +106,7 @@ nav:
             - numpy/023_index.ipynb
             - numpy/024_algebra_lineal.ipynb
             - numpy/025_broadcasting.ipynb
-        - Más Librerías:
+        - Extras:
             - numpy/scipy.ipynb
             - numpy/sympy.ipynb
     - 📝 Manipulación de Datos:

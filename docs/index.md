@@ -18,7 +18,7 @@ hide:
   url: numpy/01_intro
 
 - title: Manipulación de Datos
-  content: Pandas (básico y avanzado)
+  content: Pandas - Básico y Avanzado
   image: images/icons/data.png
   url: pandas/01_pandas_intro
 
