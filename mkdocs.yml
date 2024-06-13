@@ -119,12 +119,10 @@ nav:
               - pandas/024_filtros.ipynb
               - pandas/025_nulos_duplicados.ipynb
               - pandas/026_fechas.ipynb
-              - pandas/027_ejemplo_practico.ipynb
             - Avanzado:
               - pandas/031_groupby.ipynb
               - pandas/032_merge_concat.ipynb
               - pandas/033_pivot_melt.ipynb
-              - pandas/034_ejemplo_practico.ipynb
     - 📊 Visualización:
         - visualization/011_intro.ipynb
         - visualization/012_types.ipynb
@@ -144,3 +142,11 @@ nav:
             - visualization/035_histplot.ipynb
             - visualization/036_heatmap.ipynb
             - visualization/037_boxplot.ipynb
+    - 📚 Ejercicios:
+        - Numpy:
+            - extras/numpy_01.ipynb
+        - Pandas:
+            - extras/pandas_01.ipynb
+            - extras/pandas_02.ipynb
+        - Visualization:
+            - extras/vis_01.ipynb
