@@ -1,7 +1,7 @@
 # Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
 
 # Project information
-site_name: Data Manipulation
+site_name: Análisis Exploratorio de Datos
 site_url: https://github.com/fralfaro/python_eda
 site_author: Francisco Alfaro
 site_description:
@@ -15,18 +15,19 @@ edit_uri: ''
 
 # Markdown extensions
 markdown_extensions:
-  - attr_list
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - neoteroi.cards
+  - neoteroi.timeline
+  - neoteroi.projects
   - admonition
-  - md_in_html
+  - pymdownx.details
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tasklist
-  - pymdownx.tabbed
+
+extra_css:
+  - css/neoteroi-mkdocs.css
 
 # Extra javascript
 extra_javascript:
@@ -38,14 +39,20 @@ extra_javascript:
 theme:
   name: material
   language: es
-  logo: images/logo_dm.png
-  favicon: images/logo_fam.png
+  logo: images/python.png
+  favicon: images/icon.png
   features:
-    - navigation.instant
-    - navigation.top
-    - content.code.annotate
     - search.suggest
     - search.highlight
+    - content.tabs.link
+    - navigation.indexes
+    - content.tooltips
+    - navigation.path
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - navigation.tabs
+    - navigation.footer
   palette:
     # Light mode
     - media: '(prefers-color-scheme: light)'
@@ -90,8 +97,8 @@ plugins:
 
 # TOC
 nav:
-    - Home: index.md
-    - Computación Científica:
+    - 🏠 Home: index.md
+    - 🔬 Computación Científica:
         - Numpy:
             - numpy/01_intro.ipynb
             - numpy/021_objetos.ipynb
@@ -102,21 +109,23 @@ nav:
         - Más Librerías:
             - numpy/scipy.ipynb
             - numpy/sympy.ipynb
-    - Manipulación de Datos:
+    - 📝 Manipulación de Datos:
         - Pandas:
-            - pandas/01_pandas_intro.ipynb
-            - pandas/021_objetos.ipynb
-            - pandas/022_op_basicas.ipynb
-            - pandas/023_index.ipynb
-            - pandas/024_filtros.ipynb
-            - pandas/025_nulos_duplicados.ipynb
-            - pandas/026_fechas.ipynb
-            - pandas/027_ejemplo_practico.ipynb
-            - pandas/031_groupby.ipynb
-            - pandas/032_merge_concat.ipynb
-            - pandas/033_pivot_melt.ipynb
-            - pandas/034_ejemplo_practico.ipynb
-    - Visualización:
+            - Básico:
+              - pandas/01_pandas_intro.ipynb
+              - pandas/021_objetos.ipynb
+              - pandas/022_op_basicas.ipynb
+              - pandas/023_index.ipynb
+              - pandas/024_filtros.ipynb
+              - pandas/025_nulos_duplicados.ipynb
+              - pandas/026_fechas.ipynb
+              - pandas/027_ejemplo_practico.ipynb
+            - Avanzado:
+              - pandas/031_groupby.ipynb
+              - pandas/032_merge_concat.ipynb
+              - pandas/033_pivot_melt.ipynb
+              - pandas/034_ejemplo_practico.ipynb
+    - 📊 Visualización:
         - visualization/011_intro.ipynb
         - visualization/012_types.ipynb
         - Matplotlib:

@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "jupyterbook"
+name = "docs"
 version = "0.1.0"
-description = "Built with Jupyter Book"
+description = "mkdocs - courses"
 authors = ["Francisco Alfaro <francisco.alfaro.496@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
-jupyterlab = "*"
-jupyter-book = "*"
-pre-commit = "*"
+python = "^3.10"
+mkdocs-material = "*"
+neoteroi-mkdocs = "*"
+mkdocs-jupyter = "*"
