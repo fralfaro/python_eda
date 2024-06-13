@@ -11,6 +11,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/fralfaro/python_eda/extras/numpy_01/</loc>
+         <lastmod>2024-06-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/extras/pandas_01/</loc>
+         <lastmod>2024-06-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/extras/pandas_02/</loc>
+         <lastmod>2024-06-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/extras/vis_01/</loc>
+         <lastmod>2024-06-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/fralfaro/python_eda/numpy/01_intro/</loc>
          <lastmod>2024-06-13</lastmod>
          <changefreq>daily</changefreq>
@@ -37,11 +57,6 @@
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_eda/numpy/025_broadcasting/</loc>
-         <lastmod>2024-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/python_eda/numpy/ejercicios/</loc>
          <lastmod>2024-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -96,11 +111,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_eda/pandas/027_ejemplo_practico/</loc>
-         <lastmod>2024-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/fralfaro/python_eda/pandas/031_groupby/</loc>
          <lastmod>2024-06-13</lastmod>
          <changefreq>daily</changefreq>
@@ -112,11 +122,6 @@
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_eda/pandas/033_pivot_melt/</loc>
-         <lastmod>2024-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/python_eda/pandas/034_ejemplo_practico/</loc>
          <lastmod>2024-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
