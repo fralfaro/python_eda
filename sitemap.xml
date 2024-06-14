@@ -211,6 +211,41 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/fralfaro/python_eda/visualization/041_altair/</loc>
+         <lastmod>2024-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/visualization/042_lineplot/</loc>
+         <lastmod>2024-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/visualization/043_scatterplot/</loc>
+         <lastmod>2024-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/visualization/044_barplot/</loc>
+         <lastmod>2024-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/visualization/045_histplot/</loc>
+         <lastmod>2024-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/visualization/046_heatmap/</loc>
+         <lastmod>2024-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_eda/visualization/047_boxplot/</loc>
+         <lastmod>2024-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/fralfaro/python_eda/visualization/intro/</loc>
          <lastmod>2024-06-14</lastmod>
          <changefreq>daily</changefreq>
