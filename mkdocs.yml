@@ -142,6 +142,15 @@ nav:
             - visualization/035_histplot.ipynb
             - visualization/036_heatmap.ipynb
             - visualization/037_boxplot.ipynb
+        - Altair:
+            - visualization/041_altair.ipynb
+            - visualization/042_lineplot.ipynb
+            - visualization/043_scatterplot.ipynb
+            - visualization/044_barplot.ipynb
+            - visualization/045_histplot.ipynb
+            - visualization/046_heatmap.ipynb
+            - visualization/047_boxplot.ipynb
+
     - 📚 Ejercicios:
         - Numpy:
             - extras/numpy_01.ipynb
